@@ -1,14 +1,75 @@
 body{
+    background-color: #686de0;
+    color:#f5f5f5;
+    display: block;
     
 }
+.top-align{
+    text-align: center;
 
+}
 
+.js-clock{
+    font-size: 2em;
+
+}
+.js-greetings{
+    font-size: 1.8em;
+    color: #ffcccc;
+}
+.align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.js-todoList{
+    padding: 0;
+    
+}
+.js-todoList li button{
+background: none;
+border: none;
+
+}
+.js-todoList li{
+    list-style: none;
+}
 
 .greetings,
 .form{
     display: none;
 }
-
+.js-weather{
+    font-size: 1.5em;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
 .showing{
     display: block;
 }
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 1s linear;
+}
+
+
+
